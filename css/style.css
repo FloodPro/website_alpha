@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "feature.css";
+@import "cards.css";
+@import "responsive.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #dfdfdf;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "hd"
+    "main"
+    "feat"
+    "sub"
+    "ft";
+}
+
+.header {
+  grid-area: hd;
+  background: #f8f9fa;
+  color: #343a40;
+  font-size: 1.2em;
+}
+
+.main h1 {
+  color: #16207a;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #343a40;
+  padding: 1rem;
+  font-weight: 300;
+}
+
+li :hover {
+  background-color: #dfdfdf;
+  box-shadow: 0 0 0 2px #16207a inset;
+}
+
+li:nth-child(5n) {
+  float: right;
+}
+
+.footer {
+  grid-area: ft;
+  background: #343a40;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.ft-content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #aaa9a9;
+  padding: 1rem;
+}

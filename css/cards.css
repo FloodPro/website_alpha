@@ -1,0 +1,56 @@
+/* ----- STYLING FOR CARDS & CARDS CONTENT ----- */
+
+.sub-content a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+.card {
+  display: grid;
+  grid-template-areas: "content img";
+  background: #fff;
+  height: 150px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  grid-area: img;
+  overflow: hidden;
+  width: 180px;
+  height: 150px;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.card-content {
+  grid-area: content;
+  text-align: left;
+  padding: 1rem;
+}
+
+.card-content h3 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card-text {
+  display: none;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.card:hover .card-content h3 {
+  text-decoration: underline;
+}
