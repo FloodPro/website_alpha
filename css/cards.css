@@ -1,6 +1,7 @@
 /* ----- STYLING FOR CARDS & CARDS CONTENT ----- */
 
 .sub-content a {
+  display: flex;
   text-decoration: none;
   color: #343a40;
 }

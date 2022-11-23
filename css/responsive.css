@@ -5,6 +5,8 @@
   padding: 1rem;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  background: #f8f9fa;
+  width: 100%;
 }
 
 .main {
@@ -26,6 +28,11 @@
   padding-left: 0.5rem;
   font-size: 1rem;
   font-weight: 400;
+}
+
+.featured-content {
+  background: #f8f9fa;
+  padding-top: 2rem;
 }
 
 .feat-cont-social img {
@@ -148,7 +155,10 @@ figure img {
   }
 
   .sub-content {
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2rem;

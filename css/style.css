@@ -17,6 +17,7 @@ body {
 
 .container {
   display: grid;
+  /* background: red; */
   grid-template-areas:
     "hd"
     "main"
@@ -53,12 +54,12 @@ li a {
   font-weight: 300;
 }
 
-li :hover {
+.header li :hover {
   background-color: #dfdfdf;
   box-shadow: 0 0 0 2px #16207a inset;
 }
 
-li:nth-child(5n) {
+.header li:nth-child(5n) {
   float: right;
 }
 
@@ -80,4 +81,23 @@ li:nth-child(5n) {
   text-align: center;
   color: #aaa9a9;
   padding: 1rem;
+}
+
+.post-main li {
+  margin-bottom: 1rem;
+}
+
+.arete {
+  border: 2px solid rgb(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+.models {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.models img {
+  /* border: 2px solid rgb(0, 0, 0, 0.4); */
+  margin-top: 1rem;
 }
